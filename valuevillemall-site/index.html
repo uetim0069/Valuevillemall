@@ -83,7 +83,7 @@ body{background:var(--paper);color:var(--ink)}
 // ===== ValueVille MALL settings =====
 const VV_DEMO=true;            // true = sample prices + simulated Paystack. Set false when live.
 const PAYSTACK_KEY='';         // paste your Paystack PUBLIC key (pk_live_...) here
-const SUPA_URL='', SUPA_KEY='';// Supabase project URL + anon key
+const SUPA_URL='https://asgboqvwrbeaeylexryt.supabase.co', SUPA_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFzZ2JvcXZ3cmJlYWV5bGV4cnl0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIyNDA3ODMsImV4cCI6MjEwNzgxNjc4M30.q4q--vjLHw4_8ykhpGrdJ6xLevT3Hg5VYxtOTTDMKd8';// Supabase project URL + anon key
 const RATE={3:.06,6:.12,12:.24,18:.34,24:.45}; // PLACEHOLDER instalment markups per tenure. Replace with your real rates.
 const MIN_INST=50000, MAX_INST_ITEMS=2, LATE_FEE=1000;
 // =====================================
@@ -146,6 +146,5 @@ let idx=null;async function vvSearch(e){e.preventDefault();const q=$('#q').value
 document.addEventListener('click',e=>{if(!e.target.closest('.search')){const b=$('.res');if(b)b.remove()}});
 function vvZoom(i){window.open(i.src,'_blank')}
 draw();vvBuy();ckInit();trkInit();
-if(VV_DEMO){const d=document.createElement('div');d.className='demobar';d.textContent='Demo mode: sample prices and test payments. Live Paystack keys pending.';document.body.prepend(d)}
 const bat=$('#bat');if(bat&&!matchMedia('(prefers-reduced-motion:reduce)').matches){let v=100;const t=setInterval(()=>{v--;bat.textContent=v+'%';if(v<=88)clearInterval(t)},260)}else if(bat)bat.textContent='88%';
 </script></body></html>
