@@ -1,0 +1,20 @@
+{
+  "id": "/",
+  "name": "NUASA Library · UNIUYO",
+  "short_name": "NUASA Library",
+  "description": "Past questions, lecture notes and CBT practice for accounting students of the University of Uyo.",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#07080a",
+  "theme_color": "#07080a",
+  "lang": "en",
+  "categories": ["education"],
+  "icons": [
+    {"src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "/icons/maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable"},
+    {"src": "/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}
