@@ -1,0 +1,1 @@
+try{var t=localStorage.getItem('vvt');if(t)document.documentElement.dataset.theme=t}catch(e){}
